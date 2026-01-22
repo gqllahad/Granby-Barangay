@@ -62,7 +62,6 @@ a {
 }
 
 #login {
-    margin-left: 2.5rem;
     border: 2px solid var(--pri-button);
     padding: 12px;
     border-radius: 12%;
@@ -98,21 +97,27 @@ a {
     z-index: 1;
 }
 
-
 .upper-login-text{
     width: 100%;
     display: flex;
+    flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
     align-items: center;
     text-align: center;
     justify-content: center;
-    margin: 10% 0;
+    margin: 5% 0;
+}
+
+.upper-login-text p {
+    font-size: 0.8rem;
+    font-weight: 200;
+    color: var(--dark);
 }
 
 .login-box{
-    margin: 5% 5%;
+    margin: 5% 10%;
     position: relative;
     width: 100%;
     max-width: 320px;
@@ -154,6 +159,22 @@ a {
     color: var(--primary);
 }
 
+.login-forget{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.6rem;
+    color: gray;
+    width: 100%;
+}
+
+.login-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 5% 0;
+    width: 100%;
+}
+
 /* Hero */
 .hero {
     display: flex;                 
@@ -177,6 +198,7 @@ a {
     color: white;
     cursor: pointer;
     border-radius: 6px;
+    width: 50%;
 }
 
 .hero button:hover {
