@@ -20,16 +20,26 @@ include("brgyconnection.php");
           Awareness System
         </h1>
         <nav class="nav">
-          <a href="#">Home</a>
-          <a href="#">About</a>
+          <a href="#hero-start">Home</a>
+          <a href="#hero-2">About</a>
           <a href="#">FAQs</a>
-          <a href="#" id="login">Login</a>
+          <a href="#hero" id="login">Login</a>
         </nav>
       </div>
     </header>
 
     <main>
-      <section class="hero">
+      <hr />
+      <section class="hero-start" id="hero-start">
+        <div class="container">
+          <h2>Welcome</h2>
+          <p>This is your Granby Barangay!</p>
+          <button id="ctaBtn">Click Me</button>
+        </div>
+      </section>
+
+      <hr />
+      <section class="hero" id="hero">
         <div class="container">
           <h2>Welcome</h2>
           <p>This is your Granby Barangay!</p>
@@ -43,7 +53,7 @@ include("brgyconnection.php");
           </div>
           <div class="login-box">
             <input type="text" required />
-            <span>Student ID</span>
+            <span>Email</span>
           </div>
 
           <div class="login-box">
@@ -53,6 +63,16 @@ include("brgyconnection.php");
           <div class="login-forget">Forgot Password?</div>
 
           <div class="login-button"><button>LOGIN</button></div>
+        </div>
+      </section>
+
+      <hr />
+
+      <section class="hero-2" id="hero-2">
+        <div class="container">
+          <h2>Welcome</h2>
+          <p>This is your Granby Barangay!</p>
+          <button id="ctaBtn">Click Me</button>
         </div>
       </section>
     </main>
